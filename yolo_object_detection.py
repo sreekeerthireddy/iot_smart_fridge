@@ -7,8 +7,8 @@ from twilio.rest import Client
 
 # Load Yolo
 
-account_sid = 'AC0a69daf1e8412c4d4bb91712beaf89ae'
-auth_token = 'e939a41b20a3618db83484a543728d78'
+account_sid = 'xxxxxxxxxxxxxxxxxxx'
+auth_token = 'xxxxxxxxxxxxxx'
 client = Client(account_sid, auth_token)
 
 net = cv2.dnn.readNet("yolov3_training_last.weights", "yolov3_testing.cfg")
@@ -103,8 +103,8 @@ for img_path in images_path:
         message = client.messages \
          .create(
          body='There is one apple in fridge',
-         from_='+14436489378',
-         to='+918523861880'
+         from_='11111111111111',
+         to='+1111111111'
          )
         print("message sent")
      
